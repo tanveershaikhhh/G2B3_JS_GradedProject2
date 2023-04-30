@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- script -->
+    <script src="../scripts/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  </head>
+  <body>
+    <!-- Login page -->
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Login Page</span></div>
+        <!-- Enter input details -->
+        <form>
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input id="username" type="text" placeholder="User Name" required />
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="row button">
+            <input type="button" onclick="login()" value="Login" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

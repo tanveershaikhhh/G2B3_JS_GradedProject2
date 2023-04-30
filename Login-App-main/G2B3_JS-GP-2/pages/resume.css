@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#previous {
+  padding-right: 20px;
+  
+}
+
+.input-group {
+  margin-left: 30%;
+}
+
+.input-group input {
+  display: block;
+  width: 510;
+}
+
+#next {
+  padding-left: 20px;
+  
+}
+
+#error {
+  display: none;
+  text-align: center;
+  width: 80%;
+  border: 2px solid black;
+  padding-left: 0%;
+  font-size: 64px;
+  color: red;
+}
+
+#error-text {
+  font-size: 64px;
+  color: black;
+}
+
+#mainDiv {
+  border: 3px solid black;
+}
+
+#inner-row {
+  background-color: rgb(161, 248, 248);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#personName {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+#personAppliedFor {
+  text-align: center;
+  font-size: 32px;
+}
+
+#personImage {
+  font-size: 10rem;
+  background-color: rgb(161, 248, 248);
+}
+
+#person-details-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20%;
+}
+
+#personalInfo {
+  text-align: right;
+}
+
+#resume-information {
+  padding: 15px;
+}
+
+#info-background {
+  background-color: pink;
+}
+
+.card-header h3 {
+  background-color: rgb(152, 156, 156);
+}
+
+.card-body {
+  text-align: right;
+}
+
+#experience,
+#projects,
+#education,
+#internship,
+#achievements {
+  padding-left: 40px;
+}

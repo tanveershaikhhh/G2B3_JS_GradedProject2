@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>Resume Sorter</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="resume.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../scripts/resume.js"></script>
+  </head>
+  <body>
+    <br />
+    <!-- // search bar to search for the AppliedFor field, centered, hint = "Search for Keywords to filter te result"
+    // on enter call readJSONData function -->
+    <!-- // no button, on enter call readJSONData function -->
+    <!-- // the search box is prefixed by a button called "Previous" and followed by a button called "Next"
+    // the Previous button will display the previous person in the list
+    // the Next button will display the next person in the list -->
+
+    <div class="container" id="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-2">
+          <div class="input-group">
+            <span id="previous" class="input-group-btn">
+              <button class="btn btn-default" type="button">Previous</button>
+            </span>
+
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for Keywords to filter te result"
+              onkeypress="if (event.keyCode == 13) var people = readJSONData(this.value);"
+            />
+
+            <span id="next" class="input-group-btn">
+              <button class="btn btn-default" type="button">Next</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- // div tag to display a Error message if the data is not found, centered woth 80% width -->
+    <!-- // the tag has a box with solid black borders , 
+    // text inside = "No such result found" , text color = red , text size = 230px, with a black sad emoji (large) on the left
+    // the tag is hidden by default -->
+
+    <div class="container" id="error">
+      <span id="error-text">&#128577;</span>
+      No such result found
+    </div>
+
+    <!-- // a div with two rows, the second row has two coloumns, the first coloumn has a card and the second coloumn has a text area
+    // the first row has cyan background and the second row has white background ecept the first coloumn which has a pink background
+    // the two coloumns are in a 20-80 ratio respectively
+    // the div must be centered to the screen -->
+
+    <div class="container" id="mainDiv">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div id="inner-row" class="col-md-12">
+              <br />
+              <div id="person-details-wrap">
+                <div id="personName">Person Name</div>
+                <div id="personAppliedFor">Applied For</div>
+              </div>
+
+              <div class="col-md-2" id="image-wrap">
+                <i class="fas fa-user" id="personImage" alt="Avatar"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="resume-information">
+        <div id="info-background" class="col-md-2">
+          <div class="card">
+            <div class="card-header">
+              <h3>Personal Information</h3>
+            </div>
+
+            <div class="card-body" id="personalInfo">
+              <p>gdksd</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Technical Skills</h3>
+            </div>
+
+            <div class="card-body" id="personalSkills">
+              <p>gdksd</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Hobbies</h3>
+            </div>
+
+            <div class="card-body" id="personalHobbies">
+              <p>gdksd</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-10">
+          <h2 style="font-weight: bold">Work experience in previous company</h2>
+          <div id="experience">
+            <p>gdksd</p>
+          </div>
+
+          <h2 style="font-weight: bold">Projects</h2>
+          <div id="projects">
+            <p>gdksd</p>
+          </div>
+
+          <h2 style="font-weight: bold">Education</h2>
+          <div id="education">
+            <p>gdksd</p>
+          </div>
+
+          <h2 style="font-weight: bold">Internship</h2>
+          <div id="internship">
+            <p>gdksd</p>
+          </div>
+
+          <h2 style="font-weight: bold">Achievements</h2>
+          <div id="achievements">
+            <p>gdksd</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
