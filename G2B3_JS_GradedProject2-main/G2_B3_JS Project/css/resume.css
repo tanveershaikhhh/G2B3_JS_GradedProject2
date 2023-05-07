@@ -1,0 +1,191 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  margin: 30px;
+  padding: 20px;
+  gap: 32px;
+}
+
+.header {
+  
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: 30px;
+  transform: translateX(-60%);
+}
+
+#inside-search{
+  border: 2px solid black;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+#previous-button{
+  font-size: 1.3rem;
+  margin-right: 250px;
+  padding: 10px;
+}
+
+
+#next-button{
+  font-size: 1.3rem;
+  margin-left: 250px;
+  padding: 10px;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 2px solid black;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  box-shadow: 0 0 5px;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(138, 216, 229);
+  padding-bottom: 16px;
+   gap: 32px; 
+}
+
+.no-result {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin-top: 100px;
+  height: auto;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px 2px #888888;
+}
+
+.no-result-image {
+  width: 100px;
+  height: 100px;
+  padding-right: 40px;
+}
+.no-result-text {
+  font-size: 30px;
+}
+
+.resume-applied-for {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.applied-for-p {
+  margin: 0;
+}
+
+.resume-main {
+  display: flex;
+  gap: 32px;
+  margin-left: 10px;
+}
+
+.resume-left-section {
+  background-color: pink;
+  padding: 32px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.resume-right-section {
+  padding: 32px;
+  border-radius: 16px;
+  height: fit-content;
+}
+
+.company-name-div,
+.position-div,
+.start-date-div,
+.end-date-div,
+.summary-div {
+  display: flex;
+  gap: 16px;
+}
+
+.company-details p {
+  margin: 3.2px 0;
+}
+
+.company-name-span,
+.position-span,
+.start-date-span,
+.end-date-span,
+.summary-span,
+#project-span,
+.education-span {
+  font-weight: 600;
+}
+.resume-header-logo-img{
+  width: 90px;
+  height: 100px;
+  margin-left: 100%;
+  z-index: 1;
+  margin-top: 10px;
+}
+#img{
+  width: 90px;
+  height: 100px;
+  margin-left: 350%;
+  z-index: 1;
+}
+
+.resume-header-name-h1{
+  text-align: center;
+  margin-left: 20%;
+
+}
+.resume-applied-for{
+  text-align: center;
+  margin-top: 50px;
+}
+#p-info{
+  background-color: grey;
+}
+ul{
+  list-style: none;
+}
+.education-details-ul{
+  list-style: disc;
+}
+.internship-details-ul{
+  list-style: disc;
+}
+.achievements-ul{
+  list-style: disc;
+}
+#t-skills{
+  background-color: grey;
+}
+#hobby{
+  background-color: grey;
+}
+.resume-header-name-h1{
+  width: fit-content;
+  height: fit-content;
+
+}
